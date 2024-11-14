@@ -37,13 +37,13 @@ function custom_get_customers( $request ) {
             date("Y-m-d H:i:s", strtotime($before))
         );
 
-		$vaUsers = $wpdb->get_col($vsSql);
+	$vaUsers = $wpdb->get_col($vsSql);
 
-		if($vaUsers){
-			$params['include'] = (array) $vaUsers;
-		} else{
-			$params['include'] = ['0']; // Set 0 that do not exists, if you set empty array is interpretaed as all entities
-		}
+	if($vaUsers){
+		$params['include'] = (array) $vaUsers;
+	} else{
+		$params['include'] = ['0']; // Set 0 that do not exists, if you set empty array is interpretaed as all entities
+	}
 
     } else if($modified_before and $modified_after) {
 		global $wpdb;
@@ -54,14 +54,14 @@ function custom_get_customers( $request ) {
             strtotime($modified_before)
         );
 
-		$vaUsers = $wpdb->get_col($vsSql);
+	$vaUsers = $wpdb->get_col($vsSql);
 
-		if($vaUsers){
-			$params['include'] = (array) $vaUsers;
-		} else{
-			$params['include'] = ['0']; // Set 0 that do not exists, if you set empty array is interpretaed as all entities
-		}
+	if($vaUsers){
+		$params['include'] = (array) $vaUsers;
+	} else{
+		$params['include'] = ['0']; // Set 0 that do not exists, if you set empty array is interpretaed as all entities
 	}
+    }
 
     $internal_request = new WP_REST_Request( 'GET', '/wc/v3/customers' );
     $internal_request->set_query_params( $params );
