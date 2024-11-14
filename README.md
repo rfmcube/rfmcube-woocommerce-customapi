@@ -13,7 +13,7 @@ https://woocommerce.github.io/woocommerce-rest-api-docs
 If you don't want to install via composer, you can use this way.
 
 - Download [the latest release here](https://github.com/rfmcube/rfmcube-woocommerce-customapi/releases/download/v1.0/rfmcube-woocommerce-customapi.zip)
-- Go to Plugins/Add New Plugin and upload the zip you downloaded
+- Go to Plugins/Add New Plugin and upload the zip you downloaded, click Install Plugin and Activate it
 - Remember to enable REST API and create an api key
 
 ## FAQs
