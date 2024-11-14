@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Custom WooCommerce Filters
-Description: Adds custom filters to the WooCommerce REST API for customer creation date and modified date.
+Plugin Name: Rfmcube REST API
+Description: Extend the Woocommerce REST API v3 for Rfmcube. Compatible with WC 3.5.x or later	and WP 4.4 or later.
 Version: 1.0
 Author: Rfmcube Team
 */
